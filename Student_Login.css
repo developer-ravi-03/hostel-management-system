@@ -1,0 +1,198 @@
+﻿*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body{
+    background-color: #E8EDF2;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.container{
+    padding: 34px; 
+    box-shadow: 0px 50px 50px -50px darkslategray;
+    background-color: white;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    max-width: 50%;
+    max-height: fit-content;   
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container p{
+    font-size: 40px;
+    text-align: center;
+    color: #1c1c1e;
+    margin-bottom: 10px;
+}
+
+.user_id, .password, .roll_no, .first_name,.middle_name, .last_name,.fathers_name,.DOB, .mobile_no,
+.email, .branch,.semester, .session,.address, .create_password,.confirm_password, .gender,.payment
+ {
+    font-size: 25px;
+    margin-left: 50px;
+    font-weight: 900;
+}
+
+input,select {
+    border: 2px solid black;
+    border-radius: 6px;
+    outline: none;
+    font-size: 15px;
+    width: 80%;
+    margin: 11px 0px;
+    padding: 7px;
+    align-self: center;
+}
+
+/* hover button 
+
+
+input:hover{
+    background: transparent;
+    box-shadow: 0 0 10px 0 #799be6 inset,
+                0 0 10px 6px #799be6;
+    border-radius: 6px;
+    color: black;
+} */
+
+.btn{
+    align-self: center;
+    padding: 8px 12px;
+    width: 180px;
+    cursor: pointer;
+    background: #f70303;
+    color: rgb(247, 244, 244);
+    transition: .5s ease;
+    border-radius: 10px;
+    border-color: aquamarine;
+    font-size: 25px;
+}
+
+.btn:hover{
+    background: transparent;
+    border: 2px solid #799be6;
+    box-shadow: 0 0 10px 0 #799be6 inset,
+                0 0 10px 4px #799be6;
+    border-radius: 10px;
+    color: black;
+}
+
+.btn-primary{
+    align-self: left;
+    margin-left: 55px;
+    margin-top: -5px;
+    padding: 4px 5px;
+    width: 75px;
+    cursor: pointer;
+    background: #5467c4;
+    color: rgb(247, 244, 244);
+    transition: .5s ease;
+    border-radius: 10px;
+    border-color: aquamarine;
+    font-size: 15px;
+}
+
+.btn-primary:hover{
+    background: transparent;
+    border: 2px solid #799be6;
+    box-shadow: 0 0 10px 0 #799be6 inset,
+                0 0 10px 4px #799be6;
+    border-radius: 10px;
+    color: black;
+}
+
+.NewUserReg{
+    margin-top: 10px;
+    align-self: center;
+    font-size: 14px;
+    padding: 5px 12px;
+    cursor: pointer;
+    background: #3d03fd;
+    color: rgb(247, 244, 244);
+    transition: .5s ease;
+    border-radius: 10px;
+    border-color: aquamarine;
+}
+
+.NewUserReg a{
+    text-decoration: none;
+    color: white;
+}
+
+.NewUserReg:hover{
+    background: transparent;
+    border: 2px solid #799be6;
+    box-shadow: 0 0 10px 0 #799be6 inset,
+                0 0 10px 4px #799be6;
+    border-radius: 10px;
+    color: black;
+}
+
+#p{
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+h2{
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+h2 a {
+    color:rgb(6, 252, 6);
+}
+h2 a:hover {color:Blue;}
+/* footer start */
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1em 0;
+    text-align: center;
+    background-color: black;
+    
+}
+
+p.footer_class {
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #fff;
+    font-weight: 300;
+}
+
+footer p a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer p a:hover {
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+}
+/* footer end */
+
+/* Error message start*/
+.msg{
+    font-size: 15px;
+    color: #f70303;
+    margin-left: 60px;
+    font-weight: 500;
+    margin-top: -25px;
+    margin-bottom: 10px;
+}
+/* Error message end */

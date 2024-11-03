@@ -1,0 +1,303 @@
+body{
+    padding:0;
+	margin:0;
+	position:absolute;
+    overflow-x: hidden;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%; 
+    width:100%;  
+    background-repeat:no-repeat;
+    background-size: auto;
+}
+
+/* header start */
+header 
+{
+    width: 100%;
+    opacity: 90%;
+}
+
+.logo{
+    height: 100px;
+    width: 120px;
+    margin-left: -50px;
+}
+
+.college_name
+{
+    margin-left: -60px;
+    font-size: 55px;
+    font-family: 'Bell MT'; 
+    text-decoration: underline;
+    align-items: center;
+    font-weight: 700;
+    display:flex;
+}
+
+.college_name1
+{
+    font-size: 20px;
+    margin-left: -217px;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: 700;
+    align-items: center;
+}
+
+.menu
+{
+    opacity: 80%;
+    background-color: red;
+}
+
+.button
+{
+    font-size: 16px;
+    width: 150px;
+    Height:30px;
+    align-items: center;
+    font-weight: 500;
+    border-radius: 4px;
+    border-width: 1px;
+    
+}
+
+.button a{
+    text-decoration: none;
+    color: black;
+}
+
+.button a:hover {color:blue;}
+/* header end */
+
+/* body start */
+.division_container
+{
+    position: absolute;
+    width: auto;
+    opacity: 80%;
+    background-color:black;
+    border-radius: 10px;
+    margin-top: 400px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.hostel_h1
+{
+    margin: 5px;
+    text-align: center;
+    font-size: 90px;
+    font-weight: 700;
+    color: rgb(252, 251, 251);
+}
+
+.button_container{
+    margin-top: 400px;
+}
+
+.input_class{
+    background-color: rgb(250, 4, 4);
+    font-family: Arial; 
+    color: #fff;
+    font-size: 30px; 
+    font-weight: 900;
+    border: none;
+    border-radius: 5px;
+}
+
+.input_class a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.input_class a:hover {color: rgb(63,94,251);}
+/* body end */
+
+/* footer start */
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1em 0;
+    text-align: center;
+    background-color: black;
+}
+
+p.footer_class {
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #fff;
+    font-weight: 300;
+}
+
+footer p a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer p a:hover {
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+}
+/* footer end */
+
+
+/*Responsive*/
+@media only screen and (max-width: 600px) /*screen size for 600px*/ 
+{  
+       
+    body{
+        padding:0;
+        margin:0;
+        position:fixed;
+        overflow-x: hidden;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        height: 100%; 
+        width:100%;  
+        background-repeat:no-repeat;
+        background-size: auto;
+    }
+    
+    /* header and menu start*/
+    .logo
+    {
+        height: 61px;
+        width: 80px;
+        margin-left: -10px;
+        display: flex;
+    }
+
+    .college_name
+    {
+        margin-left: -36px;
+        font-size: 27px;
+        font-family: 'Bell MT'; 
+        text-decoration: underline;
+        align-items: center;
+        font-weight: 700;
+        display: flex;
+    }
+    .college_name1
+    {
+        font-size: 17px;
+        margin-left: -60px;
+        font-family: Arial, Helvetica, sans-serif; 
+        font-weight: 700;
+        align-items: center;
+    }
+    .button
+    {
+        font-size: 10px;
+        width: 75px;
+        Height: 18px;
+        align-items: center;
+        font-weight: 500;
+        border-radius: 4px;
+        border-width: 1px;
+        
+    }
+    .menu
+    {
+        width:100%;
+        opacity: 90%;
+        background-color: red;
+    }
+
+    .button a
+    {
+        text-decoration: none;
+        color: black;
+    }
+
+    .button a:hover {color:blue;}
+    /* header and menu end*/
+
+    /*responsive  body part start*/
+
+    .division_container
+    {
+        position: absolute;
+        width: auto;
+        opacity: 80%;
+        background-color:black;
+        border-radius: 10px;
+        margin-top: 220px;
+        margin-left: 120px;
+        margin-right: 100px;
+    }
+    
+    .hostel_h1
+    {
+        margin: 5px;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 700;
+        color: rgb(252, 251, 251);
+    }
+    .button_container{
+        margin-top: 220px;
+    }
+    .input_class{
+        background-color: rgb(250, 4, 4);
+        font-family: Arial; 
+        color: #fff;
+        font-size: 20px; 
+        font-weight: 900;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .input_class a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .input_class a:hover {color:Blue;}
+
+    /*body css end*/
+
+
+    /*responsive footer start */
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 1em 0;
+        text-align: center;
+        background-color: black;
+    }
+
+    p.footer_class {
+        font-size: 8px;
+        letter-spacing: 2px;
+        color: #fff;
+        font-weight: 300;
+    }
+
+    footer p a {
+        display: inline-block;
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    footer p a:hover {
+        color: #fff;
+        text-decoration: none;
+        -webkit-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+        transition: 0.5s all;
+    }
+    /*responsive  footer end */
+}
+/*CSS END FOR @600PX*/

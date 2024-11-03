@@ -1,0 +1,511 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu',sans-serif;
+}
+:root{
+    --blue:#287bff;
+    --white:#fff;
+    --grey:#f5f5f5;
+    --black:#222;
+    --black:#999;
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: rgb(228, 228, 228);
+}
+
+.container{
+    position: relative;
+    width: 100%;
+}
+
+.navigation
+{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: var(--blue);
+    border-left: 10px solid var(--blue);
+    transition: 0.5s;
+    overflow: hidden;
+}
+.navigation ul
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.navigation ul li
+{
+    position: relative;
+    width: 100%;
+    list-style: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.navigation ul li:hover
+/* ,
+.navigation ul li.hovered */
+{
+    background: var(--white);
+}
+.navigation ul li:nth-child(1)
+{
+    margin-bottom: 40px;
+    pointer-events: none;
+}
+.navigation ul li a
+{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: var(--white);
+}
+.navigation ul li:hover a
+/* ,
+.navigation ul li.hovered a */
+{
+    color: var(--blue);
+}
+.icon
+{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+.icon ion-icon
+{
+    font-size: 1.75em;
+}
+.title
+{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+    /* font-size: 1.5em; */
+}
+.navigation ul li:hover a::before
+/* ,
+.navigation ul li.hovered a::before */
+{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0 10px var(--white);
+    pointer-events: none;
+}
+.navigation ul li:hover a::after
+/* ,
+.navigation ul li.hovered a::after */
+{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 35px -35px 0 10px var(--white);
+    pointer-events: none;
+}
+/* Dashboard start */
+.dashboard_container
+{
+    margin-left: 300px;
+}
+
+.dashoard_name
+{
+    background-color: white;
+    padding: 6px;
+    text-align: center;
+}
+
+.dashboard_name 
+{
+    padding: 6px;
+    background-color: red;
+    display: flex !important;
+    margin-bottom: 50px;
+    font-size: 15px;
+}
+
+.row_1
+{
+    display: flex;
+    flex-direction: row;
+}
+.container_1
+{
+    flex: 0 0 25%;
+    max-width: 25%;
+    margin-bottom: 1.5rem !important;
+    position: relative;
+    width: 100%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+
+}
+.container_child_1
+{
+    border-left: 0.25rem solid #4e73df !important;
+    height: 100% !important;
+    padding-top: 0.5rem !important;
+    border-radius: 5px solid var(--black);
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 1px 1px rgb(154, 153, 153);
+}
+.container_child_2
+{
+    border-left: 0.25rem solid #02f90f !important;
+    height: 100% !important;
+    padding-top: 0.5rem !important;
+    border-radius: 5px solid var(--black);
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 1px 1px rgb(154, 153, 153);
+}
+.container_child_3
+{
+    border-left: 0.25rem solid #ff0202 !important;
+    height: 100% !important;
+    padding-top: 0.5rem !important;
+    border-radius: 5px solid var(--black);
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 1px 1px rgb(154, 153, 153);
+}
+.container_child_4
+{
+    border-left: 0.25rem solid #f7ff01 !important;
+    height: 100% !important;
+    padding-top: 0.5rem !important;
+    border-radius: 5px solid var(--black);
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 1px 1px rgb(154, 153, 153);
+}
+
+.card-body 
+{
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+
+.container_child
+{
+    margin-right: 0;
+    margin-left: 0;
+    align-items: center !important;
+    margin-right: 0.5rem !important;
+    
+    
+}
+
+.text_1
+{
+    
+    font-size: 1rem;
+    font-weight: 700 !important;
+    color: #4e73df !important;
+    text-transform: uppercase !important;
+    text-align: center;
+}
+
+.text_2
+{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    margin-bottom: 0 !important;
+    font-size: 20px;
+    font-weight: 700 !important;
+    color: #5a5c69 !important;
+    margin-bottom: 0.25rem !important;
+    text-align: center;
+}
+
+/* Dashboard End */
+
+/* approval start */
+.approval_name
+{
+    padding: 6px;
+    background-color: red;
+    display: flex !important;
+    margin-bottom: 4px;
+    font-size: 15px;
+}
+
+.user_detail
+{
+    width: 100%;
+    background-color: white;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4px;
+}
+
+.user
+{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.user img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name
+{
+    margin-left:15px;
+    margin-top: 8px;
+}
+.name_1
+{
+    margin-left:15px;
+    margin-top: 2px;
+}
+.name_box
+{
+    width: 358px;
+}
+
+
+.button_allote
+{
+    margin-top: 20px;
+    margin-left: 25px;
+  
+}
+.allote_button
+{
+    height: 30px;
+    width: 150px;
+    background-color: #02f90f;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    
+}
+
+.allote_button:hover
+{
+    color: blue;
+}
+
+.delete_button
+{
+    height: 30px;
+    width: 150px;
+    background-color: #02f90f;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-left: 25px;
+}
+
+.delete_button:hover
+{
+    color: blue;
+}
+
+.view_button
+{
+    height: 30px;
+    width: 150px;
+    background-color: #02f90f;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-left: 25px;
+}
+
+.view_button:hover
+{
+    color: blue;
+}
+/* approval end */
+
+/* student record start */
+
+.student_record_name
+{
+    padding: 6px;
+    background-color: red;
+    display: flex !important;
+    margin-bottom: 4px;
+    font-size: 15px;
+}
+.table_3
+{
+    border-color: black;
+    width: 100%;
+    padding: 0px;
+}
+
+.edit
+{
+
+    width: 50px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.edit:hover
+{
+    color: blue;
+}
+
+
+/* student record end */
+
+/* Edit room start */
+.edit_2
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    padding: 5px;
+}
+.room_no
+{
+    margin-left: 10px;
+}
+.hostel_no
+{
+    margin-left: 10px;
+}
+.room_type
+{
+    margin-left: 10px;
+}
+
+.add_room
+{
+
+    width: 150px;
+    height: 20px;
+    background-color: rgb(2, 252, 2);
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.add_room:hover
+{
+    color: blue;
+}
+
+.table_2
+{
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.edit_1
+{
+
+    width: 150px;
+    height: 20px;
+    background-color: rgb(1, 255, 1);
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.edit_1:hover
+{
+    color: blue;
+}
+.delete_1
+{
+    width: 150px;
+    height: 20px;    
+    background-color: rgb(1, 255, 1);
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.delete_1:hover
+{
+    color: blue;
+}
+
+/* edit room end */
+
+
+/* footer start */
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1em 0;
+    text-align: center;
+    background-color: black;
+    margin-left: 150px;
+    
+}
+
+p.footer_class {
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #fff;
+    font-weight: 300;
+}
+
+footer p a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer p a:hover {
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+}
+/* footer end */
